@@ -17,10 +17,7 @@ class Sentiment:
     def __init__(self):
         self.classifier = pipeline(
             "sentiment-analysis",
-            model="distilbert-base-uncased",
-            framework="pt",
-            # Transformers requires you to pass device with index
-            device=torch.device("cpu"),
+            model="distilbert-base-uncased"
         )
 
     def classify(self, sentence: str):
