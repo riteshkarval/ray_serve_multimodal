@@ -30,7 +30,7 @@ applications:
 
   route_prefix: /textclassify
 
-  import_path: sentiments:app
+  import_path: text_classification.sentiments:app
 
   runtime_env: {}
 
@@ -57,7 +57,7 @@ applications:
 
   route_prefix: /imageclassify
 
-  import_path: image_classifier:app
+  import_path: image_classification.image_classifier:app
 
   runtime_env: {}
 
@@ -86,7 +86,7 @@ applications:
 
   route_prefix: /translate
 
-  import_path: translate:app
+  import_path: translate.translate:app
 
   runtime_env: {}
 
